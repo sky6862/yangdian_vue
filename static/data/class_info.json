@@ -1,0 +1,29 @@
+[
+   {
+   	"class_name":"今日疯抢",
+   	"id":1,
+    "class_img":"static/images/hot.png"
+   },
+   {
+   	"class_name":"母婴专区",
+   	"id":2,
+   	"class_img":"static/images/baby.png"
+   },
+   {
+   	"class_name":"美妆护肤",
+   	"id":3,
+   	"class_img":"static/images/meizhuang.png"
+   },{
+   	"class_name":"家具生活",
+   	"id":4,
+   	"class_img":"static/images/furniture.png"
+   },{
+   	"class_name":"食品营养",
+   	"id":5,
+   	"class_img":"static/images/food.png"
+   },{
+   	"class_name":"全球直邮",
+   	"id":6,
+   	"class_img":"static/images/airplane.png"
+   }
+]

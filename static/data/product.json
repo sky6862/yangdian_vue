@@ -1,0 +1,227 @@
+[
+   {
+   	"class_name":"今日疯抢",
+   	"class_id":1,
+   	"data":[
+   		{
+   			"id":1,
+            "cid":1,
+   			"pro_img":"static/images/pro_1.jpg",
+   			"title":"1-美国/SUPER MILD沐浴露500ml",
+   			"price":88,
+   			"old_price":108
+   		},
+   		{
+   			"id":2,
+            "cid":1,
+   			"pro_img":"static/images/pro_2.jpg",
+   			"title":"2-美国/SUPER MILD沐浴露500ml",
+   			"price":98,
+   			"old_price":158
+   		},
+   		{
+   			"id":3,
+            "cid":1,
+   			"pro_img":"static/images/pro_3.jpg",
+   			"title":"3-美国/SUPER MILD沐浴露500ml",
+   			"price":108,
+   			"old_price":208
+   		},
+   		{
+   			"id":4,
+            "cid":1,
+   			"pro_img":"static/images/pro_4.jpg",
+   			"title":"4-美国/SUPER MILD沐浴露500ml",
+   			"price":288,
+   			"old_price":388
+   		}
+   	]
+   },
+   {
+   	"class_name":"母婴专区",
+   	"class_id":2,
+   	"data":[
+   		{
+   			"id":5,
+            "cid":2,
+   			"pro_img":"static/images/pro_6.jpg",
+   			"title":"1-美国/SUPER MILD沐浴露500ml",
+   			"price":88,
+   			"old_price":108
+   		},
+   		{
+   			"id":6,
+            "cid":2,
+   			"pro_img":"static/images/pro_5.jpg",
+   			"title":"2-美国/SUPER MILD沐浴露500ml",
+   			"price":98,
+   			"old_price":158
+   		},
+   		{
+   			"id":7,
+            "cid":2,
+   			"pro_img":"static/images/pro_3.jpg",
+   			"title":"3-美国/SUPER MILD沐浴露500ml",
+   			"price":108,
+   			"old_price":208
+   		},
+   		{
+   			"id":8, 
+            "cid":2,
+   			"pro_img":"static/images/pro_1.jpg",
+   			"title":"4-美国/SUPER MILD沐浴露500ml",
+   			"price":288,
+   			"old_price":388
+   		}
+   	]
+   },
+   {
+   	"class_name":"美妆护肤",
+   	"class_id":3,
+   	"data":[
+   		{
+   			"id":9, 
+            "cid":3,
+   			"pro_img":"static/images/pro_1.jpg",
+   			"title":"1-美国/SUPER MILD沐浴露500ml",
+   			"price":88,
+   			"old_price":108
+   		},
+   		{
+   			"id":10, 
+            "cid":3,
+   			"pro_img":"static/images/pro_2.jpg",
+   			"title":"2-美国/SUPER MILD沐浴露500ml",
+   			"price":98,
+   			"old_price":158
+   		},
+   		{
+   			"id":11,
+            "cid":3,
+   			"pro_img":"static/images/pro_5.jpg",
+   			"title":"3-美国/SUPER MILD沐浴露500ml",
+   			"price":108,
+   			"old_price":208
+   		},
+   		{
+   			"id":12,
+            "cid":3,
+   			"pro_img":"static/images/pro_6.jpg",
+   			"title":"4-美国/SUPER MILD沐浴露500ml",
+   			"price":288,
+   			"old_price":388
+   		}
+   	]
+   },{
+   	"class_name":"家具生活",
+   	"class_id":4,
+   	"data":[
+   		{
+   			"id":13, 
+            "cid":4,
+   			"pro_img":"static/images/pro_3.jpg",
+   			"title":"1-美国/SUPER MILD沐浴露500ml",
+   			"price":88,
+   			"old_price":108
+   		},
+   		{
+   			"id":14,
+            "cid":4,
+   			"pro_img":"static/images/pro_4.jpg",
+   			"title":"2-美国/SUPER MILD沐浴露500ml",
+   			"price":98,
+   			"old_price":158
+   		},
+   		{
+   			"id":15,
+            "cid":4,
+   			"pro_img":"static/images/pro_5.jpg",
+   			"title":"3-美国/SUPER MILD沐浴露500ml",
+   			"price":108,
+   			"old_price":208
+   		},
+   		{
+   			"id":16,
+            "cid":4,
+   			"pro_img":"static/images/pro_6.jpg",
+   			"title":"4-美国/SUPER MILD沐浴露500ml",
+   			"price":288,
+   			"old_price":388
+   		}
+   	]
+   },{
+   	"class_name":"食品营养",
+   	"class_id":5,
+   	"data":[
+   		{
+   			"id":17,
+            "cid":5,
+   			"pro_img":"static/images/pro_5.jpg",
+   			"title":"1-美国/SUPER MILD沐浴露500ml",
+   			"price":88,
+   			"old_price":108
+   		},
+   		{
+   			"id":18,
+            "cid":5,
+   			"pro_img":"static/images/pro_6.jpg",
+   			"title":"2-美国/SUPER MILD沐浴露500ml",
+   			"price":98,
+   			"old_price":158
+   		},
+   		{
+   			"id":19,
+            "cid":5,
+   			"pro_img":"static/images/pro_3.jpg",
+   			"title":"3-美国/SUPER MILD沐浴露500ml",
+   			"price":108,
+   			"old_price":208
+   		},
+   		{
+   			"id":20,
+            "cid":5,
+   			"pro_img":"static/images/pro_4.jpg",
+   			"title":"4-美国/SUPER MILD沐浴露500ml",
+   			"price":288,
+   			"old_price":388
+   		}
+   	]
+   },{
+   	"class_name":"全球直邮",
+   	"class_id":6,
+   	"data":[
+   		{
+   			"id":21,
+            "cid":6,
+   			"pro_img":"static/images/pro_4.jpg",
+   			"title":"1-美国/SUPER MILD沐浴露500ml",
+   			"price":88,
+   			"old_price":108
+   		},
+   		{
+   			"id":12,
+            "cid":6,
+   			"pro_img":"static/images/pro_3.jpg",
+   			"title":"2-美国/SUPER MILD沐浴露500ml",
+   			"price":98,
+   			"old_price":158
+   		},
+   		{
+   			"id":13,
+            "cid":6,
+   			"pro_img":"static/images/pro_2.jpg",
+   			"title":"3-美国/SUPER MILD沐浴露500ml",
+   			"price":108,
+   			"old_price":208
+   		},
+   		{
+   			"id":24,
+            "cid":6,
+   			"pro_img":"static/images/pro_1.jpg",
+   			"title":"4-美国/SUPER MILD沐浴露500ml",
+   			"price":288,
+   			"old_price":388
+   		}
+   	]
+   }
+]

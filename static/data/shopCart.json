@@ -1,0 +1,38 @@
+[
+	{
+		"id":1,
+		"cid":1,
+		"pro_img":"static/images/pro_1.jpg",
+		"title":"1-美国/SUPER MILD沐浴露500ml",
+		"price":88,
+		"num":1,
+        "store":"杭州保税区仓1"
+	},
+	{
+		"id":2,
+		"cid":1,
+		"pro_img":"static/images/pro_2.jpg",
+		"title":"2-美国/SUPER MILD沐浴露500ml",
+		"price":98,
+		"num":2,
+        "store":"杭州保税区仓2"
+	},
+	{
+		"id":3,
+		"cid":2,
+		"pro_img":"static/images/pro_3.jpg",
+		"title":"3-美国/SUPER MILD沐浴露500ml",
+		"price":108,
+		"num":3,
+      "store":"杭州保税区仓3"
+	},
+	{
+		"id":4,
+		"cid":3,
+		"pro_img":"static/images/pro_4.jpg",
+		"title":"4-美国/SUPER MILD沐浴露500ml",
+		"price":288,
+		"num":4,
+        "store":"杭州保税区仓4"
+	}
+]

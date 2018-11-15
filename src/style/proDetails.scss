@@ -1,0 +1,360 @@
+@import 'common.scss';
+
+.header-bar {
+    height: .65rem;
+    overflow: hidden;
+    padding-top: .1rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 7.5rem;
+    background:none;
+
+    .icon {
+        display: block;
+        width: .55rem;
+        height: .55rem;
+        background-color: #b2b2b2;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        &.icon-back {
+            float: left;
+            margin-left:0;
+            background-image: url('../../static/images/icon-back.png');
+            background-size: .18rem .26rem;
+            background-position: center;
+        }
+        &.icon-cart {
+            float: left;
+            background-image: url('../../static/images/icon-shop-s.png');
+            background-size: .4rem .4rem;
+            background-position: center;
+        }
+        &.icon-cart:before{
+            content:"";
+        }
+        &.icon-menu {
+            float: right;
+            margin-right: .55rem;
+            margin-left: .26rem;
+            background-image: url('../../static/images/icon-menu-s.png');
+            background-size: .4rem .4rem;
+            background-position: center;
+        }
+    }
+    .right {
+        float: right;
+    }
+}
+
+.banner-box {
+    height: 5.4rem;
+    border-bottom: 2px solid #eee;
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.describe {
+    overflow: hidden;
+    padding-bottom: .15rem;
+    .desc-bar {
+        height: .85rem;
+        overflow: hidden;
+        padding: 0.07rem .3rem;
+        .title {
+            width: 5.9rem;
+            float: left;
+            line-height: .4rem;
+            font-size: .3rem;
+            /*px*/
+            color: $c333;
+        }
+        .store {
+            color: #e71f19;
+            font-size: .16rem;
+            /*px*/
+            float: right;
+            height: .7rem;
+            padding-left: .3rem;
+            border-left: 2px solid #eee;
+            .icon {
+                display: block;
+                width: .4rem;
+                height: .4rem;
+                margin: 0 auto;
+                background-size: .4rem .4rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 0.06rem;
+                &.icon-star {
+                    background-image: url('../../static/images/icon-star-r.png');
+                }
+            }
+        }
+    }
+    .down {
+        overflow: hidden;
+        padding: 0 0 0 .3rem;
+    }
+    .price-wrap {
+        overflow: hidden;
+        width: 1.7rem;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        float: left;
+        .now {
+            color: #eb2222;
+            font-size: .34rem;
+            /*px*/
+        }
+        .before {
+            color: $c999;
+            font-size: .24rem;
+            /*px*/
+            text-decoration: line-through;
+        }
+    }
+    .labels {
+        .disc {
+            overflow: hidden;
+            margin-bottom: .1rem;
+            span {
+                padding: 0.05rem .1rem;
+                background-color: $mainc;
+                color: $cfff;
+            }
+        }
+        .features {
+            overflow: hidden;
+            span {
+                border: 2px solid $mainc;
+                padding: 0.04rem 0.09rem;
+                color: $mainc;
+            }
+        }
+        span {
+            display: inline-block;
+            margin-right: 0.15rem;
+            font-size: 0.2rem;
+            /*px*/
+        }
+    }
+}
+
+.detail-box {
+    overflow: hidden;
+    padding: 0 0 1.3rem;
+    border-top: 20px solid #eee;
+    .tab {
+        height: .85rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            color: $c999;
+            font-size: .26rem;
+            /*px*/
+            padding: 0 .1rem .1rem;
+            border-bottom: 2px solid transparent;
+            &.router-link-active {
+                color: $mainc;
+                border-bottom: 2px solid $mainc;
+            }
+        }
+    }
+}
+
+
+
+
+.pay-bar {
+    position: fixed;
+    z-index: 999;
+    background-color: $cfff;
+    bottom: 0;
+    left: 0;
+    height: .97rem;
+    width: 7.5rem;
+    font-size: .3rem;
+    /*px*/
+    border-top: 2px solid #eee;
+    .total {
+        float: left;
+        line-height: .97rem;
+        padding-left: .3rem;
+        color: $c666;
+        span {
+            color: #eb2222;
+        }
+    }
+    .add,
+    .pay {
+        width: 2rem;
+        float: right;
+        color: $cfff;
+        height: 100%;
+        line-height: .97rem;
+        text-align: center;
+    }
+    .add {
+        background-color: $mainc;
+    }
+    .pay {
+        background-color: #eb2222;
+    }
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+
+.pay-detail {
+
+    position: fixed;
+    width: 6.7rem;
+    padding: 0 .4rem .45rem;
+    height: auto; // overflow: hidden;
+    background-color: $cfff;
+    background-clip: padding-box;
+    bottom: .99rem;
+    // bottom:0;
+    left: 0;
+    z-index: 999;
+    border-top: .28rem solid transparent;
+    .icon.icon-close {
+        background-image: url('../../static/images/icon-close.png');
+        display: block;
+        width: .56rem;
+        height: .56rem;
+        background-size: .56rem .56rem;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: .27rem;
+        right: .3rem;
+    }
+    .product {
+        width: 100%;
+        height: 2.1rem;
+        img {
+            float: left;
+            margin-right: .25rem;
+            width: 2rem;
+            height: 2rem;
+            margin-top: -0.28rem;
+            border-radius: 7px;
+            background-color: $cfff;
+            display: block;
+            border: 7px solid #eee;
+        }
+        .desc {
+            height: 1.77rem;
+            padding-top: .1rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .price {
+            color: #eb2222;
+            line-height: .4rem;
+            font-size: .3rem;
+            /*px*/
+        }
+        .stock,
+        .select {
+            line-height: .36rem;
+            font-size: .26rem;
+            /*px*/
+            color: $c333;
+        }
+    }
+    .num-wrap {
+        height: .54rem;
+        .num-title {
+            line-height: .54rem;
+            float: left;
+            color: $c333;
+            font-size: .3rem;
+            /*px*/
+        }
+        .num-btn-group {
+            float: right;
+            width: 1.98rem;
+            height: .52rem;
+            border: 2px solid #eee;
+            .icon {
+                width: .52rem;
+                height: 100%;
+                display: block;
+                line-height: .52rem;
+                background-color: $c999;
+                font-size: .4rem;
+                /*px*/
+                line-height: .52rem;
+                text-align: center;
+                color: $cfff;
+                &.icon-reduce {
+                    float: left;
+                }
+                &.icon-add {
+                    float: right;
+                }
+            }
+            input {
+                width: .94rem;
+                height: .5rem;
+                border: none;
+                outline: none;
+                float: left;
+                font-size: .3rem;
+                line-height: .52rem;
+                color: $c333;
+                text-align: center;
+            }
+        }
+    }
+    .size-wrap,
+    .age-wrap {
+        padding-top: .15rem;
+        h6 {
+            line-height: .68rem;
+            height: .68rem;
+            font-size: .3rem;
+            /*px*/
+            color: $c333;
+        }
+        &>div {
+            overflow: hidden;
+        }
+        input[type=radio] {
+            display: none;
+            &+span {
+                display: inline-block;
+                padding: 0 .4rem;
+                height: .45rem;
+                line-height: .45rem;
+                color: $c999;
+                background-color: #ddd;
+                margin-right: .18rem;
+                border-radius: .12rem;
+                font-size: .26rem;
+                /*px*/
+            }
+            &:checked+span {
+                background-color: $mainc;
+                color: $cfff;
+            }
+        }
+    }
+}
