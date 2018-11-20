@@ -5,7 +5,7 @@
         
 		<!-- 内容 -->
 		<div class="content">
-
+    
             <div class="shop-list">
 				<!-- is-del 删除按钮,ref 自定义属性，在vue中用来查找dom节点/组件的 -->
 	
@@ -25,8 +25,9 @@
 	            	:key="index"
 	        		v-on:swipeleft="show_del(index)"
 	        		v-on:swiperight="hide_del(index)"
+                    :swipe-options="{direction: 'horizontal'}"
                     >
-                
+                <!-- :swipe-options="{direction: 'horizontal'}" 解决无法上下滑动的问题 -->
 	                <div class="store">
 	                    <span class="icon icon-store"></span>
 	                    <h4>{{v.store}}</h4>
@@ -42,7 +43,7 @@
 	                    <!-- <div class="pic">
 	                        <img alt="product-pic" :src="v.pro_img">
 	                    </div> -->
-                        <v-touch tag="div" class="pic" v-on:tap="show_pro(v.id,v.cid)">
+                        <v-touch tag="div" class="pic" v-on:tap.prevent="show_pro(v.id,v.cid)">
                             <img alt="product-pic" :src="v.pro_img">
                         </v-touch>
 
@@ -52,15 +53,15 @@
 	                            <span>19cm</span>
 	                        </div> -->
                             
-                            <v-touch tag="div" class="title" v-on:tap="show_pro(v.id,v.cid)">
+                            <v-touch tag="div" class="title" v-on:tap.prevent="show_pro(v.id,v.cid)">
                                 {{v.title}}...
                                 <span>19cm</span>
                             </v-touch>
 
 	                        <div class="num-wrap">
-	                            <span class="icon icon-reduce" @click.stop="v.num=v.num-1">-</span>
+	                            <span class="icon icon-reduce" @click.stop.prevent="v.num=v.num-1">-</span>
 	                            <input type="number" :value="v.num">
-	                            <span class="icon icon-add" @click.stop="v.num=v.num+1">+</span>
+	                            <span class="icon icon-add" @click.stop.prevent="v.num=v.num+1">+</span>
 	                        </div>
 	                    </div>
 
@@ -139,7 +140,6 @@
             .catch(function(error){
                 console.log(error)
             });
-
 		},
 		methods:{
 			show_del:function (m) {
@@ -169,9 +169,11 @@
             show_pro:function(pro_id,class_id){
                 // console.log(pro_id,class_id);
                 this.$router.push({name:"pro_details",params:{'id':pro_id,'cid':class_id}});
+            },
+            handleScroll (e) { 
+              console.log(e)
             }
 		}	
-
 	}
 </script>
 
@@ -181,8 +183,9 @@
     overflow: hidden;
     background-color: #fafafa;
     min-height: 11.1rem;
-    padding-top:0;
+    padding-top:0.89rem;
 }
+
 .shop-list {
     overflow: hidden;
     // padding-top: 0.13rem;

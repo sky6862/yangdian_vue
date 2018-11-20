@@ -70,7 +70,7 @@ export default {
             display:block;
 
             height:0.39rem;
-            width: 0.42rem;
+            width: 0.46rem;
 
             // width:50%;
             // font-size:0.44rem;

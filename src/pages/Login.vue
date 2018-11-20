@@ -1,6 +1,11 @@
 <template>
 	<div class="login">
-        <Header></Header>
+        <!--  v-bind:show_right_btn="true" 是否显示 顶部右侧按钮，默认不显示-->
+        <Header v-bind:show_right_btn="true">
+            <slot>登录</slot>
+            <!-- 使用卡槽传内容 -->
+            <router-link to="/register" slot="right_bar">注册</router-link>
+        </Header>
         <!-- <router-link to="/register">注册</router-link> -->
        
         <form class="content">
@@ -13,7 +18,8 @@
                 <input v-model="psw" type="password" name="psw" />
             </div>
             <div class="foget">
-                <a href="javascript:;">忘记密码</a>
+                 <router-link to='/register' style="float:left">没有账号，立即注册!</router-link>
+                 <a href="javascript:;">忘记密码</a>
             </div>
             <div>
                 <input class="submit" type="submit" value="登录" @click.prevent="do_login">
@@ -76,7 +82,6 @@
                 .catch(function(error){
                     console.log('error',error)
                 });
-
             }
         }
 	}

@@ -37,6 +37,16 @@ Vue.use(VueLazyload, {
   attempt: 1
 })
 
+// vue中使用vue-router切换页面时滚动条自动滚动到顶部的方法
+router.afterEach((to,from,next) => {
+	// 产品评价页面，向下滚动一下，其它页面，回到顶部
+	if(to.name=='subevaluate'){
+		window.scrollTo(0,360);
+	}else{
+		window.scrollTo(0,0);
+	}
+});
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app', //../index.html 中的 <div id="app">...</div>

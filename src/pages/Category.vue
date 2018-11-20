@@ -121,7 +121,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.con_list{
+.con_list{
     overflow:hidden;
     padding:1.02rem 0;
 
@@ -178,5 +178,9 @@
          }
       }
     }
+  }
+
+  #container{
+  	background:red!important;
   }
 </style>

@@ -1,13 +1,14 @@
 <template>
   <div id="container">
     <!-- <router-view/> -->
-    <transition name="fade" mode="out-in">
+    <!-- 使用动画时打开，默认不使用路由动画 -->
+    <!-- <transition name="fade" mode="out-in"> -->
     <!-- <transition :name="transitionName">  -->
-      <keep-alive>
+      <!-- <keep-alive> -->
         <router-view></router-view>
           <!-- <router-view class="transitionBody"></router-view> -->
-      </keep-alive>
-    </transition>
+      <!-- </keep-alive> -->
+    <!-- </transition> -->
 
   </div>
 </template>

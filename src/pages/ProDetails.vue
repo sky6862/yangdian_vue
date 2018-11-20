@@ -44,16 +44,18 @@
 		<!-- 使用子路由，实现选项卡，注意，这里路由的参数
 			 传参数的时候，要使用name，如：name:'subdetai'
 		 -->
-        <div class="detail-box">
+        <div class="detail-box" v-if="pro_info.id">
             <div class="tab">
                 <!-- <router-link to="/pro_details/subDetail/1/1">商品详情</router-link>
                 <router-link to="/pro_details/subEvaluate/1/1">买家口碑</router-link> --> 
-                <router-link :to="{name:'subdetai',params:{'id':pro_info.id,'cid':cid}}">商品详情</router-link>
+                <!-- :class="{sub_active:isShowDetail}" -->
+                <router-link :class="{sub_active:isShowDetail}" :to="{name:'subdetai',params:{'id':pro_info.id,'cid':cid}}">商品详情</router-link>
+
                 <router-link :to="{name:'subevaluate',params:{'id':pro_info.id,'cid':cid}}">买家口碑</router-link>
             </div>
             <router-view></router-view>
-
         </div>
+
         <div class="pay-bar">
             <div class="total">
                 总价：
@@ -132,7 +134,7 @@
 			return {
 				pro_info:{}, //产品信息
 				num:1, //默认产品数量
-				// isShowDetail:true,
+				isShowDetail:true, //默认二级导航选中样式
 			    isWantToPay:false,//立即购买，加入购物 时，显示产品的选项
 			    pics:[],
 			    cid:null //产品cid
@@ -208,7 +210,20 @@
     		go_cart:function () {
     			this.$router.push('/shop_cart');
     		}
-		}
+		},
+        beforeRouteUpdate (to, from, next) {
+            //组件内守卫，默认二级导航选中样式（产品详情，产品评价）
+            // 在当前路由改变，但是该组件被复用时调用
+            // 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，
+            // 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。
+            // 可以访问组件实例 `this`
+            if(to.name=="subdetai"){
+                this.isShowDetail=true;
+            }else{
+                this.isShowDetail=false;
+            }
+            next();
+        },
 	}
 </script>
 

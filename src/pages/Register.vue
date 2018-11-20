@@ -1,6 +1,11 @@
 <template>
 	<div class="register">
-		<Header>注册</Header>
+		<Header v-bind:show_right_btn="true">
+			<slot>注册</slot>
+			<!-- 使用卡槽传内容 -->
+            <router-link to="/login" slot="right_bar">登录</router-link>
+		</Header>
+
 		<!-- <router-link to="/register">注册</router-link> -->
        
 	    <form class="content">
