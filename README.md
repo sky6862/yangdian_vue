@@ -1,12 +1,11 @@
-
-#技术栈
+##技术栈
 ``` bash
 1.vuejs+vueRouter+axios+sass+vue-cli+webpack
 2.后端数据，部分是使用的是json文件进行模拟的
 3.登录，注册使用的是php+mysql
-``` 
+```
 ``` bash
-#最新v1.1版本 细节如下
+##最新v1.1版本 细节如下
 ``` 
 ``` bash
 1.修正，购物车列表不能上下滑动的问题
@@ -37,4 +36,4 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader)
