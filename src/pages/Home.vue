@@ -27,7 +27,7 @@
 			:cid="v.id" :product="get_product(v.id)"></ProductList>
 
 		<!-- 底部菜单 -->
-		<div class="clearFix mgt102"></div>
+		<!-- <div class="clearFix mgt102"></div> -->
 		<FooterMenu></FooterMenu>
 	</div>
 </template>
@@ -101,7 +101,7 @@
 </script>
 
 <style lang="scss">
-	div.mgt102{
-		margin-top:1.15rem;
+	div.home{
+		padding-bottom:1.2rem;
 	}
 </style>
