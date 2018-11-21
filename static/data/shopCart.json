@@ -18,7 +18,7 @@
         "store":"杭州保税区仓2"
 	},
 	{
-		"id":3,
+		"id":5,
 		"cid":2,
 		"pro_img":"static/images/pro_3.jpg",
 		"title":"3-美国/SUPER MILD沐浴露500ml",
@@ -27,7 +27,7 @@
       "store":"杭州保税区仓3"
 	},
 	{
-		"id":4,
+		"id":9,
 		"cid":3,
 		"pro_img":"static/images/pro_4.jpg",
 		"title":"4-美国/SUPER MILD沐浴露500ml",
